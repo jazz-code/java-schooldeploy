@@ -10,8 +10,10 @@ import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableWebMvc
+@EnableSwagger2
 @EnableJpaAuditing
 @SpringBootApplication
 public class SchoolApplication

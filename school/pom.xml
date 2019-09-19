@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lambdaschool</groupId>
-    <artifactId>starthere</artifactId>
+    <artifactId>school</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>javaschool</name>
+    <name>school</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -136,7 +136,7 @@
 
     <build>
         <!--        <finalName>${project.artifactId}</finalName>-->
-<!--        <finalName>jazz-code-java-school, h</finalName>-->
+        <finalName>jazz-code-java-school</finalName>
 
         <plugins>
             <plugin>
@@ -146,23 +146,23 @@
 
             <!-- Heroku Maven Plugin Configuration -->
             <!-- https://cwiki.apache.org/confluence/display/MAVEN/Maven+Properties+Guide -->
-<!--            <plugin>-->
-<!--                <groupId>com.heroku.sdk</groupId>-->
-<!--                <artifactId>heroku-maven-plugin</artifactId>-->
-<!--                <version>2.0.10</version>-->
-<!--                <configuration>-->
-<!--                    <appName>${project.build.finalName}</appName>-->
-<!--                    <includeTarget>false</includeTarget>-->
-<!--                    <includes>-->
-<!--                        &lt;!&ndash;   For windows      <include>${project.build.directory}\${project.build.finalName}.jar</include>&ndash;&gt;-->
-<!--                        <include>${project.build.directory}/${project.build.finalName}.jar</include>-->
-<!--                    </includes>-->
-<!--                    <jdkVersion>${java.version}</jdkVersion>-->
-<!--                    <processTypes>-->
-<!--                        <web>java $JAVA_OPTS -Dserver.port=$PORT -jar target/${project.build.finalName}.jar</web>-->
-<!--                    </processTypes>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
+            <plugin>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>2.0.10</version>
+                <configuration>
+                    <appName>jazz-code-java-school</appName>
+                    <includeTarget>false</includeTarget>
+                    <includes>
+                        <!--   For windows      <include>${project.build.directory}\${project.build.finalName}.jar</include>-->
+                        <include>${project.build.directory}/${project.build.finalName}.jar</include>
+                    </includes>
+                    <jdkVersion>${java.version}</jdkVersion>
+                    <processTypes>
+                        <web>java $JAVA_OPTS -Dserver.port=$PORT -jar target/${project.build.finalName}.jar</web>
+                    </processTypes>
+                </configuration>
+            </plugin>
 
         </plugins>
     </build>
