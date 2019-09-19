@@ -136,7 +136,7 @@
 
     <build>
         <!--        <finalName>${project.artifactId}</finalName>-->
-<!--        <finalName>jazz-code-java-school</finalName>-->
+<!--        <finalName>jazz-code-java-school, h</finalName>-->
 
         <plugins>
             <plugin>
