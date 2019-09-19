@@ -1,11 +1,11 @@
 package com.lambdaschool.school.service;
 
-import com.lambdaschool.starthere.exceptions.ResourceNotFoundException;
-import com.lambdaschool.starthere.models.Role;
-import com.lambdaschool.starthere.models.User;
-import com.lambdaschool.starthere.models.UserRoles;
-import com.lambdaschool.starthere.repository.RoleRepository;
-import com.lambdaschool.starthere.repository.UserRepository;
+import com.lambdaschool.school.exception.ResourceNotFoundException;
+import com.lambdaschool.school.model.Role;
+import com.lambdaschool.school.model.User;
+import com.lambdaschool.school.model.UserRoles;
+import com.lambdaschool.school.repository.RoleRepository;
+import com.lambdaschool.school.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
