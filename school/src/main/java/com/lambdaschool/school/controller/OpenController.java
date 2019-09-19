@@ -1,9 +1,10 @@
 package com.lambdaschool.school.controller;
 
-import com.lambdaschool.starthere.models.User;
-import com.lambdaschool.starthere.models.UserRoles;
-import com.lambdaschool.starthere.services.RoleService;
-import com.lambdaschool.starthere.services.UserService;
+
+import com.lambdaschool.school.model.User;
+import com.lambdaschool.school.model.UserRoles;
+import com.lambdaschool.school.service.RoleService;
+import com.lambdaschool.school.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
